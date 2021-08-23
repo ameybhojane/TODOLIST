@@ -68,7 +68,7 @@ const AddTask = ({ onCancel, onAddTask }) => {
 };
 
 const Taskitems = ({ selectedtab, tasks }) => {
-  if (selectedtab == "NEXT_7") {
+  if (selectedtab === "NEXT_7") {
     return tasks
       .filter(
         (task) =>
@@ -85,7 +85,7 @@ const Taskitems = ({ selectedtab, tasks }) => {
       ));
   }
 
-  if (selectedtab == "TODAY") {
+  if (selectedtab === "TODAY") {
     return tasks
       .filter((task) => isToday(task.date))
       .map((task) => (
